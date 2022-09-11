@@ -95,8 +95,12 @@ var cookieParser = require('cookie-parser')
 var app = express()
 app.use(cookieParser())
 
-app.get('/cookie', function(req, res) {
+app.get('/cook', function(req, res) {
    console.log("Cookies: ", req.cookies)
+})
+
+app.get('/', function(req, res) {
+   console.log("Cookies: hello users ")
 })
 
 @app.get("/app",function(req,res){
